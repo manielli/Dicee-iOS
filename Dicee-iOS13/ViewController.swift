@@ -16,11 +16,7 @@ class ViewController: UIViewController {
     var diceImages = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
     var leftDiceNumber = 2;
     var rightDiceNumber = 5;
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-    }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         diceImageView1.image = diceImages[leftDiceNumber]
