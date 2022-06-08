@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
-    var leftDiceNumber = 0;
-    var rightDiceNumber = 0;
+    var leftDiceNumber = 2;
+    var rightDiceNumber = 5;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         diceImageView2.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][rightDiceNumber]
         
         leftDiceNumber = leftDiceNumber + 1
-        rightDiceNumber = rightDiceNumber + 1
+        rightDiceNumber = rightDiceNumber - 1
     }
     
 
