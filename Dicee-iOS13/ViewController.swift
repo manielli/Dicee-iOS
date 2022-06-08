@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         diceImageView1.image = diceImages[leftDiceNumber]
         diceImageView2.image = diceImages[rightDiceNumber]
         
-        leftDiceNumber = leftDiceNumber + 1
-        rightDiceNumber = rightDiceNumber - 1
+        leftDiceNumber += 1
+        rightDiceNumber -= 1
     }
     
 
